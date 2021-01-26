@@ -1,15 +1,18 @@
-# How to support editing rich text documents in XAF Blazor
+# How to edit rich text documents in XAF's Blazor UI
 
 ## Scenario
 XAF's WinForms and WebForms apps support the [Office Module](https://docs.devexpress.com/eXpressAppFramework/400003/concepts/extra-modules/office-module/office-module-overview) for editing rich text documents. This Module integrates our WinForms RichEditControl and ASP.NET ASPxRichEdit controls into platform-specific Property Editors. Until the Office Module supports Blazor UI, it is possible to implement this functionality manually.
 
 ## Solution
-In this example, we create a custom Property Editor for XAF Blazor to edit rich text documents. We use our [ASP.NET Core Rich Text Editor](https://docs.devexpress.com/AspNetCore/400373/rich-edit) in the custom Property Editor. The following article describes how to create a custom Property Editor in XAF Blazor: [How to: Implement a Property Editor Based on a Custom Component (Blazor)](https://docs.devexpress.com/eXpressAppFramework/402189/task-based-help/property-editors/how-to-implement-a-property-editor-based-on-custom-components-blazor?p=netstandard).
-To easily re-use our custom Property Editor in an XAF Blazor application, we implement it in a Module. You can find its resulting code at [RichText.Module.Blazor](RichText.Module.Blazor).
+We created a custom XAF Property Editor based on our [ASP.NET Core Rich Text Editor](https://docs.devexpress.com/AspNetCore/400373/rich-edit). 
+To easily re-use our custom Property Editor in XAF Blazor apps, we implemented the editor in a Blazor Module project ([RichText.Module.Blazor](RichText.Module.Blazor)). For more information, review the following concepts:
+- [Property Editors](https://docs.devexpress.com/eXpressAppFramework/113097/concepts/ui-construction/view-items/property-editors);
+- [How to: Implement a Property Editor Based on a Custom Component (Blazor)](https://docs.devexpress.com/eXpressAppFramework/402189/task-based-help/property-editors/how-to-implement-a-property-editor-based-on-custom-components-blazor?p=netstandard);
+- [Application Solution Components](https://docs.devexpress.com/eXpressAppFramework/112569/concepts/application-solution-components).
 ![result](media/Screenshot.png)
 
 ## Implementation Steps
-**Step 1.** In the Solution Explorer, include **RichText.Module.Blazor.csproj** in your XAF Blazor solution and then reference this RichText.Module.Blazor project in the *YourSolutionName.Blazor.Server* project. In the *YourSolutionName.Blazor.Server/BlazorApplication.cs* file, create a RichText.Module.Blazor.RichTextBlazorModule instance and add it to the Modules collection. For more information, see [Add a Module in Code](https://docs.devexpress.com/eXpressAppFramework/118047/concepts/application-solution-components/ways-to-register-a-module#code).
+**Step 1.** In the Solution Explorer, include *RichText.Module.Blazor.csproj* in your XAF Blazor solution and then reference this *RichText.Module.Blazor* project in the *YourSolutionName.Blazor.Server* project. In the *YourSolutionName.Blazor.Server/BlazorApplication.cs* file, create a `RichText.Module.Blazor.RichTextBlazorModule` instance and add it to the `XafApplication.Modules` collection. For more information, see [Add a Module in Code](https://docs.devexpress.com/eXpressAppFramework/118047/concepts/application-solution-components/ways-to-register-a-module#code).
 
 **Step 2.** In the *YourSolutionName.Blazor.Server/Startup.cs* file, add the `services.AddRichTextBlazorModule();` line to the `Startup.ConfigureServices` method.
 
