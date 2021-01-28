@@ -13,9 +13,9 @@
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.ExpressApp" Version="20.2.4" />
-    <PackageReference Include="DevExpress.ExpressApp.Blazor" Version="20.2.4" />
-    <PackageReference Include="DevExpress.ExpressApp.Office" Version="20.2.4" />
+    <PackageReference Include="DevExpress.ExpressApp" Version="20.2.5" />
+    <PackageReference Include="DevExpress.ExpressApp.Blazor" Version="20.2.5" />
+    <PackageReference Include="DevExpress.ExpressApp.Office" Version="20.2.5" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.1" />
   </ItemGroup>
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
