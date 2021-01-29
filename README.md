@@ -1,4 +1,4 @@
-# How to edit rich text documents in XAF's Blazor UI
+# Blazor - How to edit rich text documents stored using the Office Module
 
 ## Scenario
 XAF's WinForms and WebForms apps support the [Office Module](https://docs.devexpress.com/eXpressAppFramework/400003/concepts/extra-modules/office-module/office-module-overview) for editing rich text documents. This Module integrates our WinForms RichEditControl and ASP.NET ASPxRichEdit controls into platform-specific Property Editors. Until the Office Module supports Blazor UI, it is possible to implement this functionality manually.
