@@ -16,7 +16,6 @@
     <PackageReference Include="DevExpress.ExpressApp" Version="20.2.6" />
     <PackageReference Include="DevExpress.ExpressApp.Blazor" Version="20.2.6" />
     <PackageReference Include="DevExpress.ExpressApp.Office" Version="20.2.6" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.1" />
   </ItemGroup>
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Command="npm run build" />
