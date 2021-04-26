@@ -5,7 +5,7 @@ XAF's WinForms and WebForms apps support the [Office Module](https://docs.devexp
 
 ## Solution
 We created a custom XAF Property Editor based on our [ASP.NET Core Rich Text Editor](https://docs.devexpress.com/AspNetCore/400373/rich-edit). 
-To easily re-use our custom Property Editor in XAF Blazor apps, we implemented the editor in a Blazor Module project ([RichText.Module.Blazor](RichText.Module.Blazor)). For more information, review the following concepts:
+To easily re-use our custom Property Editor in XAF Blazor apps, we implemented the editor in a Blazor Module project ([RichText.Module.Blazor](RichText.Moduletest333.Blazor)). For more information, review the following concepts:
 - [Property Editors](https://docs.devexpress.com/eXpressAppFramework/113097/concepts/ui-construction/view-items/property-editors);
 - [How to: Implement a Property Editor Based on a Custom Component (Blazor)](https://docs.devexpress.com/eXpressAppFramework/402189/task-based-help/property-editors/how-to-implement-a-property-editor-based-on-custom-components-blazor?p=netstandard);
 - [Application Solution Components](https://docs.devexpress.com/eXpressAppFramework/112569/concepts/application-solution-components).
