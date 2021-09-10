@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" ?>
-<Application Title="Solution1">
-  <Options>
-    <LayoutManagerOptions RequiredFieldMark="*" />
-  </Options>
-  <Views>
-  </Views>
-</Application>
